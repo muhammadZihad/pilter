@@ -1,0 +1,19 @@
+<?php
+
+namespace {{ namespace }};
+
+use Zihad\Pilter\Filters\Filter;
+
+class {{ class }}Filter extends Filter
+{
+    // protected array $filterableFields = [];
+    // protected array $sortableFields = [];
+
+
+    protected function search(string $value): void
+    {
+        // implement global search
+    }
+
+    
+}

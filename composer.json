@@ -1,0 +1,44 @@
+{
+  "name": "zihad/pilter",
+  "description": "A filter package to help developers to attach filter queries to their query builder.",
+  "type": "library",
+  "version": "0.1.0",
+  "require": {
+    "php": "^8.0",
+    "laravel/framework": "^9|^10|^11"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Zihad\\Pilter\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "muhammadZihad",
+      "email": "zihad.muhammadar@gmail.com",
+      "role": "Developer",
+      "homepage": "https://www.linkedin.com/in/muhammad-ar-zihad/"
+    }
+  ],
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true,
+    "preferred-install": "dist",
+    "optimize-autoloader": true,
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "require-dev": {
+    "pestphp/pest": "^1.22"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Zihad\\Pilter\\PilterServiceProvider"
+      ]
+    }
+  }
+}
