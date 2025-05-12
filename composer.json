@@ -2,7 +2,7 @@
   "name": "zihad/pilter",
   "description": "A filter package to help developers to attach filter queries to their query builder.",
   "type": "library",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "require": {
     "php": "^8.0",
     "laravel/framework": ">=9.0"
