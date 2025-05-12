@@ -33,6 +33,23 @@ $posts = (new PostFilter(Post::query(), ['title' => 'Post 1', 'sort' => '-title'
     ->sort()
     ->get();
 ```
+Or
+```php
+namespace App\Models;
+
+use Zihad\Pilter\Traits\Filterable;
+
+// Use Filterable trait in model
+class Post extends Model
+{
+    use Filterable;
+}
+
+
+$posts = Post::query()
+    ->applyQuery(['title' => 'Post 1', 'sort' => '-title']), PostFilter::class)
+    ->get();
+```
 You can filter and sort by defining separate methods in `PostFilter.php`
 ```php
 // Filter method
